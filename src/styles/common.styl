@@ -2,6 +2,7 @@ rupture.mobile-cutoff = 800px
 rupture.desktop-cutoff = 1024px
 
 $colorWhite = #fff
+$colorGrayLight = #eee
 $colorGray = #ccc
 $colorGrayDark = #999
 $colorBlack = #000
@@ -28,4 +29,5 @@ fnButton(fontSize = 1rem)
   &:hover
   &:active
     _fnButton(fontSize)
-    background-color: lightness($colorPrimary, 70%)
+    font-size (fontSize * 1.1)
+    padding: 0.5rem 1rem

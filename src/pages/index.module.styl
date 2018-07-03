@@ -39,7 +39,8 @@ $bsPane
     font-size 120%
     color $colorWhite
     &.em2
-      font-size 100%
+      color inherit
+      font-size 90%
       font-style italic
   strong
     font-size 150%
@@ -59,12 +60,31 @@ $bsPane
 
 /* feature pane */
 
-.featurePane
-  @extend $bsPane
+$bsFeaturePane
+  @extend $bsContent
+  margin-top 50px
+  margin-bottom 50px
   display flex
   flex-direction row
   justify-content center
   align-items center
+  +mobile()
+    flex-direction column
+
+.featurePaneLeft
+  @extend $bsFeaturePane
+  +mobile()
+    & > section:nth-child(1)
+      order 2
+    & > section:nth-child(2)
+      order 1
+
+.featurePaneRight
+  @extend $bsFeaturePane
+  & > section:nth-child(1)
+    order 2
+  & > section:nth-child(2)
+    order 1
 
 .info
   max-width 400px
@@ -72,12 +92,20 @@ $bsPane
 .info_title
   font-weight: 700
 
+// .screenshot_mobile
+//   width 270px
+//   height 480px
+//   +tablet()
+//     width 207.50px
+//     height 360px
+//   +mobile()
+//     width 135px
+//     height 240px
+
 .screenshot
-  width 270px
-  height 480px
+  width 640px
+  height auto
   +tablet()
-    width 207.50px
-    height 360px
+    width 480px
   +mobile()
-    width 135px
-    height 240px
+    width 320px

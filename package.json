@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "https://meth.app - Meth website",
   "main": "index.js",
-  "repository": "git@github.com:meth/website.git",
+  "repository": "git@github.com:meth/meth.github.io.git",
   "author": "Ramesh Nair <ram@hiddentao.com>",
   "license": "MIT",
   "private": true,
@@ -29,7 +29,7 @@
     "gatsby": "gatsby",
     "build": "NODE_ENV=production gatsby build",
     "dev": "gatsby develop -p 8001",
-    "deploy": "/bin/sh -c 'if [ \"$TRAVIS_BRANCH\" = \"source\" ]; then gh-pages -b master -d public; else echo \"Skipping deployment, not on right branch\"; fi'",
+    "deploy": "/bin/sh -c 'if [ \"$TRAVIS_BRANCH\" = \"source\" ]; then gh-pages -b master -d public -r git@github.com:meth/meth.github.io.git; else echo \"Skipping deployment, not on right branch\"; fi'",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

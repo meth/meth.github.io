@@ -9,7 +9,6 @@ before_install:
   - tar -xzvf ./.deploy-key.tgz
 script:
   - yarn build
-after_success:
   - chmod 600 ./.deploy-key/id_rsa
   - eval "$(ssh-agent -s)"
   - ssh-add ./.deploy-key/id_rsa

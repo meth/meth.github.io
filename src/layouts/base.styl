@@ -8,15 +8,17 @@ global-reset()
 
 body
   font-family 'Open Sans', Verdana, sans-serif
+  background-color: $colorWhite
+  color $colorBlack
 
 a
-avisited
+a:visited
   transition all 0.5s ease
   text-decoration none
   background-color transparent
   border-bottom 1px solid $colorPrimary
   color $colorPrimary
-ahover
-aactive
+a:hover
+a:active
   background-color $colorPrimary
   color $colorWhite

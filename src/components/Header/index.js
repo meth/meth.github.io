@@ -12,10 +12,10 @@ export default ({ siteTitle }) => (
     </Link>
     <div className={styles.menu}>
       <div className={styles.desktop}>
-        <Link to="/" className={styles.link}>Desktop Home</Link>
+        <Link to="/download" className={styles.link}>Download</Link>
       </div>
       <div className={styles.mobile}>
-        <Link to="/" className={styles.link}>Mobile Home</Link>
+        <Link to="/download" className={styles.link}>Mobile Home</Link>
       </div>
     </div>
   </div>

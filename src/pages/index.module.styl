@@ -1,12 +1,21 @@
 @import 'rupture'
 @import '../styles/common'
 
+/* general */
+
+a.button
+  fnButton(1.5rem)
+
+$bsPane
+  @extend $bsContent
+  height 100vh
+
+/* pane 1 */
 
 .pane1
-  @extend $bsContent
+  @extend $bsPane
   background $colorBlack
   color $colorWhite
-  height 100vh
   display flex
   flex-direction row
   justify-content center
@@ -48,5 +57,27 @@
     width 320px
     height 240px
 
-a.button
-  fnButton(1.5rem)
+/* feature pane */
+
+.featurePane
+  @extend $bsPane
+  display flex
+  flex-direction row
+  justify-content center
+  align-items center
+
+.info
+  max-width 400px
+
+.info_title
+  font-weight: 700
+
+.screenshot
+  width 270px
+  height 480px
+  +tablet()
+    width 207.50px
+    height 360px
+  +mobile()
+    width 135px
+    height 240px

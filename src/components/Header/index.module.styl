@@ -2,6 +2,7 @@
 
 .container
   position fixed
+  z-index: 1
   top 0
   left 0
   width 100vw
@@ -12,12 +13,12 @@
   justify-content space-between
 
   a
-  avisited
+  a:visited
     padding-bottom 0.2rem
     color $colorWhite
     border-color alpha($colorWhite, 0)
-  ahover
-  aactive
+  a:hover
+  a:active
     background-color transparent
     border-color alpha($colorWhite, 1)
     color $colorWhite
@@ -31,7 +32,7 @@ a.title
   flex-direction row
   justify-content center
   align-items center
-  &hover
+  &:hover
     letter-spacing 4px
 
 .logo
@@ -44,13 +45,13 @@ a.title
 
 .menu
   a
-  avisited
+  a:visited
     color $colorGray
     text-transform lowercase
     font-size 0.9rem
     letter-spacing 1px
 
-    &hover
+    &:hover
       letter-spacing 2px
 
   .desktop

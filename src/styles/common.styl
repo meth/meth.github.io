@@ -1,0 +1,31 @@
+rupture.mobile-cutoff = 800px
+rupture.desktop-cutoff = 1024px
+
+$colorWhite = #fff
+$colorGray = #ccc
+$colorGrayDark = #999
+$colorBlack = #000
+$colorPrimary = #00b2d9
+
+$bsContent
+  padding 2rem
+
+
+_fnButton(fontSize)
+  border-radius: 5px
+  text-decoration: none
+  border-style: none
+  background-color: $colorPrimary
+  color: $colorWhite
+  padding: 0.5rem 1rem
+  text-align: center
+  font-size: fontSize
+
+fnButton(fontSize = 1rem)
+  _fnButton(fontSize)
+  &:visited
+    _fnButton(fontSize)
+  &:hover
+  &:active
+    _fnButton(fontSize)
+    background-color: lightness($colorPrimary, 70%)

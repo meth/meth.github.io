@@ -5,9 +5,16 @@ module.exports = {
     keywords: 'ethereum, dapp, blockchain, wallet, browser, mobile, desktop, ios, android'
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src`
+      }
+    },
     'gatsby-plugin-react-helmet',
     {
-      resolve: "gatsby-plugin-stylus",
+      resolve: 'gatsby-plugin-stylus',
       options: {
         use: [
           require('rupture')(),
@@ -16,5 +23,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-postcss',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
   ],
 }

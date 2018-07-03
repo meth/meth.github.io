@@ -1,40 +1,63 @@
-@import 'rupture'
-@require '../../styles/utils'
+@require '../../styles/common'
 
 .container
-  position: fixed
-  top: 0
-  left: 0
-  width: 100vw
-  background: alpha($colorBlack, 0.7)
-  padding: 1rem
-  display: flex
-  flex-direction: row
-  justify-content: space-between
+  position fixed
+  top 0
+  left 0
+  width 100vw
+  background alpha($colorBlack, 0.75)
+  padding 1rem
+  display flex
+  flex-direction row
+  justify-content space-between
 
   a
-  a:link
-    padding-bottom: 0.2rem
-    color: $colorWhite
-    border-color: alpha($colorWhite, 0)
-  a:hover
-  a:active
-    background-color: transparent
-    border-color: alpha($colorWhite, 1)
+  avisited
+    padding-bottom 0.2rem
     color $colorWhite
+    border-color alpha($colorWhite, 0)
+  ahover
+  aactive
+    background-color transparent
+    border-color alpha($colorWhite, 1)
+    color $colorWhite
+
+a.title
+  border-bottom 0px
+  font-weight 700
+  text-transform uppercase
+  letter-spacing 2px
+  display flex
+  flex-direction row
+  justify-content center
+  align-items center
+  &hover
+    letter-spacing 4px
+
+.logo
+  width 1.5rem
+  height 1.5rem
+  margin-right 5px
+  background-color $colorWhite
+  border-radius 1.5rem
+
 
 .menu
   a
-  a:link
-    color: $colorGray
+  avisited
+    color $colorGray
+    text-transform lowercase
+    font-size 0.9rem
+    letter-spacing 1px
+
+    &hover
+      letter-spacing 2px
 
   .desktop
-    display: none
-    +desktop()
-      display: block
-  .mobile
-    display: none
+    display block
     +mobile()
-      display: block
-    +tablet()
-      display: block
+      display none
+  .mobile
+    display none
+    +mobile()
+      display block

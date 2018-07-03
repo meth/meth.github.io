@@ -1,12 +1,14 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import LogoImage from '../LogoImage'
 import styles from './index.module.styl'
 
-const Header = ({ siteTitle }) => (
+export default ({ siteTitle }) => (
   <div className={styles.container}>
     <Link to="/" className={styles.title}>
-      {siteTitle}
+      <LogoImage className={styles.logo} />
+      <span>{siteTitle}</span>
     </Link>
     <div className={styles.menu}>
       <div className={styles.desktop}>
@@ -18,5 +20,3 @@ const Header = ({ siteTitle }) => (
     </div>
   </div>
 )
-
-export default Header

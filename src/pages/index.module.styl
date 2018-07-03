@@ -1,10 +1,52 @@
 @import 'rupture'
-@import '../styles/utils'
+@import '../styles/common'
 
-.container
 
 .pane1
-  background: $colorBlack
-  color: $colorWhite
-  height: 100vh
-  padding-top: 3rem
+  @extend $bsContent
+  background $colorBlack
+  color $colorWhite
+  height 100vh
+  display flex
+  flex-direction row
+  justify-content center
+  align-items center
+  +mobile()
+    flex-direction column
+
+.pane1_textBox
+  max-width 400px
+  text-align: center
+  p
+    font-size 2rem
+    line-height 3.5rem
+    color $colorGrayDark
+    text-align: center
+    margin 0 0 3rem
+    +mobile()
+      font-size 1.5rem
+      line-height: 2.5rem
+  em
+    font-size 120%
+    color $colorWhite
+    &.em2
+      font-size 100%
+      font-style italic
+  strong
+    font-size 150%
+    font-weight 700
+    color $colorWhite
+
+
+.pane1_imageBox
+  width 640px
+  height 480px
+  +tablet()
+    width 480px
+    height 360px
+  +mobile()
+    width 320px
+    height 240px
+
+a.button
+  fnButton(1.5rem)

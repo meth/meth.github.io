@@ -1,52 +1,21 @@
 {
   "assetsByChunkName": {
-    "component---src-pages-index-js": [
-      "component---src-pages-index-js-c9379c63b4c13ace5f6a.js",
-      "component---src-pages-index-js-c9379c63b4c13ace5f6a.js.map"
-    ],
-    "component---src-pages-download-js": [
-      "component---src-pages-download-js-1d4f0f19c1c44398ab65.js",
-      "component---src-pages-download-js-1d4f0f19c1c44398ab65.js.map"
-    ],
-    "path---": [
-      "path----20f63a164b5ddc69dafd.js",
-      "path----20f63a164b5ddc69dafd.js.map"
-    ],
-    "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-f72567f057c0033631e8.js",
-      "component---src-layouts-index-js-f72567f057c0033631e8.js.map"
-    ],
-    "path---index": [
-      "path---index-29451897924eff0ace43.js",
-      "path---index-29451897924eff0ace43.js.map"
-    ],
-    "component---src-pages-404-js": [
-      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
-      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
-    ],
+    "component---src-pages-index-js": "component---src-pages-index-js-c9379c63b4c13ace5f6a.js",
+    "component---src-pages-download-js": "component---src-pages-download-js-1d4f0f19c1c44398ab65.js",
+    "path---": "path----20f63a164b5ddc69dafd.js",
+    "component---src-layouts-index-js": "component---src-layouts-index-js-f72567f057c0033631e8.js",
+    "path---index": "path---index-29451897924eff0ace43.js",
+    "component---src-pages-404-js": "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
     "commons": [
       "commons-bbbc71fdbf23d1ca1dd6.js",
-      "build-js-styles.css",
-      "commons-bbbc71fdbf23d1ca1dd6.js.map",
-      "build-js-styles.css.map"
+      "build-js-styles.css"
     ],
-    "path---404-html": [
-      "path---404-html-a0e39f21c11f6a62c5ab.js",
-      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
-    ],
-    "path---download": [
-      "path---download-a0e39f21c11f6a62c5ab.js",
-      "path---download-a0e39f21c11f6a62c5ab.js.map"
-    ],
+    "path---404-html": "path---404-html-a0e39f21c11f6a62c5ab.js",
+    "path---download": "path---download-a0e39f21c11f6a62c5ab.js",
     "app": [
       "app-75de8cce5e9405c60513.js",
-      "build-js-styles.css",
-      "app-75de8cce5e9405c60513.js.map",
-      "build-js-styles.css.map"
+      "build-js-styles.css"
     ],
-    "path---404": [
-      "path---404-a0e39f21c11f6a62c5ab.js",
-      "path---404-a0e39f21c11f6a62c5ab.js.map"
-    ]
+    "path---404": "path---404-a0e39f21c11f6a62c5ab.js"
   }
 }

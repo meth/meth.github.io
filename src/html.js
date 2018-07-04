@@ -24,11 +24,16 @@ module.exports = class HTML extends React.Component {
       <html {...this.props.htmlAttributes}>
         <head>
           <meta charSet="utf-8" />
-          <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
           />
+          <link rel="shortcut icon" href="/favicon.ico" />
+          <link rel="shortcut icon" href="/favicon.png" />
+          <meta name="msapplication-TileColor" content="#fff" />
+          <meta name="msapplication-TileImage" content="/favicon.png" />
+
           {this.props.headComponents}
           <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
           {css}

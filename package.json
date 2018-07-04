@@ -27,7 +27,7 @@
   },
   "scripts": {
     "gatsby": "gatsby",
-    "build": "NODE_ENV=production gatsby build",
+    "build": "NODE_ENV=production gatsby build && cp src/images/favicon.* public/",
     "dev": "gatsby develop -p 8001",
     "deploy": "/bin/sh -c 'if [ \"$TRAVIS_BRANCH\" = \"source\" ]; then scripts/deployToGithubPages.sh; else echo \"Skipping deployment, not on right branch\"; fi'",
     "format": "prettier --write 'src/**/*.js'",

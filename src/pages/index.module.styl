@@ -62,8 +62,7 @@ $bsPane
 
 $bsFeaturePane
   @extend $bsContent
-  margin-top 50px
-  margin-bottom 50px
+  margin 1rem 0
   display flex
   flex-direction row
   justify-content center
@@ -88,9 +87,22 @@ $bsFeaturePane
 
 .info
   max-width 400px
+  margin 2rem
 
-.info_title
-  font-weight: 700
+.infoTitle
+  font-weight 700
+  font-size 2rem
+  margin-bottom 2rem
+  +mobile()
+    text-align center
+
+.infoList
+  margin 0
+  & > li
+    margin-bottom 1rem
+    +mobile()
+      text-align center
+
 
 // .screenshot_mobile
 //   width 270px

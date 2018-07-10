@@ -21,7 +21,7 @@ export default ({ data }) => (
     <section className={styles.featurePaneRight}>
       <section className={styles.info}>
         <h2 className={styles.infoTitle}>HD wallet and tokens</h2>
-        <ul style={styles.infoList}>
+        <ul className={styles.infoList}>
           <li>Generate account addresses using industry standard <a href="https://github.com/ethereum/EIPs/issues/84">BIP-44</a> protocol.</li>
           <li>Supports <a href="https://github.com/meth/app/blob/master/src/config/tokens.json">comprehensive list</a> of ERC-20 tokens as your own custom tokens.</li>
           <li>Never lose access - use your passphrase with Metamask and MyEtherWallet.</li>
@@ -34,7 +34,7 @@ export default ({ data }) => (
     <section className={styles.featurePaneLeft}>
       <section className={styles.info}>
         <h2 className={styles.infoTitle}>All networks supported</h2>
-        <ul style={styles.infoList}>
+        <ul className={styles.infoList}>
           <li>Connect to main network, all public test networks, as well as custom private networks.</li>
           <li>Advanced network detection based on blockchain state.</li>
         </ul>
@@ -46,7 +46,7 @@ export default ({ data }) => (
     <section className={styles.featurePaneRight}>
       <section className={styles.info}>
         <h2 className={styles.infoTitle}>Full smart contract support</h2>
-        <ul style={styles.infoList}>
+        <ul className={styles.infoList}>
           <li>Deploy smart contracts to any chain and easily save the contract address for later use.</li>
           <li>Use the friendly UI to interact with any contract on any chain.</li>
         </ul>
@@ -58,7 +58,7 @@ export default ({ data }) => (
     <section className={styles.featurePaneLeft}>
       <section className={styles.info}>
         <h2 className={styles.infoTitle}>Multi-tab browser with bookmarks</h2>
-        <ul style={styles.infoList}>
+        <ul className={styles.infoList}>
           <li>Run multiple Dapps simultaneously with tabbed browing.</li>
           <li>Save your favourite Dapps as bookmarks.</li>
         </ul>
@@ -70,7 +70,7 @@ export default ({ data }) => (
     <section className={styles.featurePaneRight}>
       <section className={styles.info}>
         <h2 className={styles.infoTitle}>Address book </h2>
-        <ul style={styles.infoList}>
+        <ul className={styles.infoList}>
           <li>Add contract and account addresses to your own personal address book.</li>
           <li>Save time later on by looking up addresses instead of typing them out.</li>
         </ul>
@@ -82,7 +82,7 @@ export default ({ data }) => (
     <section className={styles.featurePaneLeft}>
       <section className={styles.info}>
         <h2 className={styles.infoTitle}>Transaction history</h2>
-        <ul style={styles.infoList}>
+        <ul className={styles.infoList}>
           <li>View your per-network transaction history for all transactions created in Meth.</li>
           <li>Instantly access detailed transaction information on <a href="http://etherscan.io/">Etherscan</a>.</li>
         </ul>
@@ -94,7 +94,7 @@ export default ({ data }) => (
     <section className={styles.featurePaneRight}>
       <section className={styles.info}>
         <h2 className={styles.infoTitle}>Secure cross-device sync</h2>
-        <ul style={styles.infoList}>
+        <ul className={styles.infoList}>
           <li>All data is sync-ed in real-time to your other devices.</li>
           <li>Strong client-side encryption (AES-256-GCM) applied prior to sync - no one else can ever read your data.</li>
         </ul>
@@ -102,6 +102,9 @@ export default ({ data }) => (
       <section className={styles.screenshot}>
         <Img sizes={data.xpSync.childImageSharp.sizes} />
       </section>
+    </section>
+    <section className={styles.downloadPane}>
+      <a className={styles.button} href="/download">Download now</a>
     </section>
   </div>
 )

@@ -104,6 +104,7 @@ export default ({ data }) => (
       </section>
     </section>
     <section className={styles.downloadPane}>
+      <h2>What are you waiting for!?</h2>
       <a className={styles.button} href="/download">Download now</a>
     </section>
   </div>

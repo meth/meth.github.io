@@ -12,20 +12,26 @@ export default ({ siteTitle }) => (
         <li><Link to="/download">Download</Link></li>
       </ul>
       <div className={styles.copyright}>
-
+        Cooked by <a href="https://twitter.com/hiddentao">@hiddentao</a>
       </div>
     </div>
     <div className={styles.right}>
+      <span>Find us on:</span>
       <ul className={styles.social}>
         <li>
-          <Link to="https://www.reddit.com/r/methapp/">
-            <i className='far fa-lg fa-reddit' />
-          </Link>
+          <a href="https://github.com/meth/app">
+            <i className='far fa-lg fa-github' />
+          </a>
         </li>
         <li>
-          <Link to="https://twitter.com/theMethApp">
+          <a href="https://www.reddit.com/r/methapp/">
+            <i className='far fa-lg fa-reddit' />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/theMethApp">
             <i className='far fa-lg fa-twitter' />
-          </Link>
+          </a>
         </li>
       </ul>
     </div>

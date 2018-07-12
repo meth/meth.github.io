@@ -20,17 +20,17 @@ export default ({ siteTitle }) => (
       <ul className={styles.social}>
         <li>
           <a href="https://github.com/meth/app">
-            <i className='far fa-lg fa-github' />
+            <i className='fa fa-lg fa-github' />
           </a>
         </li>
         <li>
           <a href="https://www.reddit.com/r/methapp/">
-            <i className='far fa-lg fa-reddit' />
+            <i className='fa fa-lg fa-reddit' />
           </a>
         </li>
         <li>
           <a href="https://twitter.com/theMethApp">
-            <i className='far fa-lg fa-twitter' />
+            <i className='fa fa-lg fa-twitter' />
           </a>
         </li>
       </ul>

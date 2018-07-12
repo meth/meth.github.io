@@ -34,8 +34,7 @@ module.exports = class HTML extends React.Component {
           <meta name="msapplication-TileColor" content="#fff" />
           <meta name="msapplication-TileImage" content="/favicon.png" />
           {this.props.headComponents}
-          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/regular.css" />
-          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" />
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />          
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
           {css}
         </head>

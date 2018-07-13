@@ -18,6 +18,7 @@ export default ({ data }) => (
         <Img sizes={data.xpApp.childImageSharp.sizes} />
       </section>
     </section>
+    <a name="features" />
     <section className={styles.featurePaneRight}>
       <section className={styles.info}>
         <h2 className={styles.infoTitle}>HD wallet and tokens</h2>

@@ -13,7 +13,19 @@ const MENU_LINKS = [
   {
     url: '/download',
     label: 'Download'
-  }
+  },
+  {
+    url: 'https://www.reddit.com/r/methapp/',
+    label: <i className='fa fa-lg fa-reddit' />
+  },
+  {
+    url: 'https://twitter.com/theMethApp',
+    label: <i className='fa fa-lg fa-twitter' />
+  },
+  {
+    url: 'https://github.com/meth/app',
+    label: <i className='fa fa-lg fa-github' />
+  },
 ]
 
 export default class Header extends PureComponent {
@@ -26,7 +38,7 @@ export default class Header extends PureComponent {
     const { siteTitle } = this.props
 
     const menuLinks = MENU_LINKS.map(({ url, label }) => (
-      <li key={label}><Link to={url} className={styles.link} onClick={this._toggleMenu}>{label}</Link></li>
+      <li key={url}><Link to={url} className={styles.link} onClick={this._toggleMenu}>{label}</Link></li>
     ))
 
     return (

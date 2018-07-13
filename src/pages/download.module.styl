@@ -1,0 +1,23 @@
+@import 'rupture'
+@import '../styles/common'
+
+/* general */
+
+.container {
+  @extend $bsContent
+  min-height 100vh
+  padding-top 5rem
+  display flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+}
+
+.error {
+  background-color: $colorRed
+  color $colorWhite
+  font-size 1.2rem
+  padding 1em
+  border-radius 5px
+  line-height: 1.5rem
+}

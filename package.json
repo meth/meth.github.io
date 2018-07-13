@@ -23,7 +23,8 @@
     "nib": "^1.1.2",
     "postcss-preset-env": "^5.2.1",
     "react-helmet": "^5.2.0",
-    "rupture": "^0.7.1"
+    "rupture": "^0.7.1",
+    "whatwg-fetch": "^2.0.4"
   },
   "scripts": {
     "gatsby": "gatsby",

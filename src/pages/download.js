@@ -19,7 +19,7 @@ const OS_NAMES_ICONS = {
   },
   ios: {
     label: 'iOS',
-    icon: 'app-store'
+    icon: 'mobile'
   },
   android: {
     label: 'Android',
@@ -53,6 +53,7 @@ export default class DownloadPage extends PureComponent {
   render () {
     return (
       <div className={styles.container}>
+        <h1>Download</h1>
         {this._renderContent()}
       </div>
     )
@@ -83,7 +84,7 @@ export default class DownloadPage extends PureComponent {
     }
 
     return (
-      <div className={styles.downloadLinks}>
+      <div className={styles.downloadButtons}>
         {os ? (
           specificLink
         ) : (
@@ -91,6 +92,11 @@ export default class DownloadPage extends PureComponent {
             We can't tell what operating system you are using. Please choose the correct link below!
           </p>
         )}
+        <div className={styles.buttonRow}>
+          {Object.keys(data).map(key => (
+            os && key === os ? null : this._renderButton(data, key)
+          ))}
+        </div>
       </div>
     )
   }
@@ -100,8 +106,10 @@ export default class DownloadPage extends PureComponent {
     const { version, updateUrl } = data[os]
 
     return (
-      <a href={data[os].updateUrl}>
+      <a key={label} href={data[os].updateUrl} className={styles.button}>
         <i className={`fa fa-${icon}`} />
+        <span className={styles.os}>{label}</span>
+        <span className={styles.version}>v{version}</span>
       </a>
     )
   }

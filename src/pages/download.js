@@ -1,3 +1,4 @@
+import cx from 'classnames'
 import 'whatwg-fetch'
 import React, { PureComponent } from 'react'
 import Link from 'gatsby-link'
@@ -94,19 +95,19 @@ export default class DownloadPage extends PureComponent {
         )}
         <div className={styles.buttonRow}>
           {Object.keys(data).map(key => (
-            os && key === os ? null : this._renderButton(data, key)
+            os && key === os ? null : this._renderButton(data, key, os ? styles.buttonSecondary : null)
           ))}
         </div>
       </div>
     )
   }
 
-  _renderButton (data, os) {
+  _renderButton (data, os, extraStyle) {
     const { label, icon } = OS_NAMES_ICONS[os]
     const { version, updateUrl } = data[os]
 
     return (
-      <a key={label} href={data[os].updateUrl} className={styles.button}>
+      <a key={label} href={/*data[os].updateUrl*/'#'} className={cx(styles.button, extraStyle)}>
         <i className={`fa fa-${icon}`} />
         <span className={styles.os}>{label}</span>
         <span className={styles.version}>v{version}</span>

@@ -1,1 +1,1 @@
-webpackJsonp([60335399758886],{104:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Meth",description:"Cross-platform Etherum wallet and Dapp browser",keywords:"ethereum, dapp, blockchain, wallet, browser, mobile, desktop, ios, android"}}},layoutContext:{}}}});
+webpackJsonp([60335399758886],{105:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Meth",description:"Cross-platform Etherum wallet and Dapp browser",keywords:"ethereum, dapp, blockchain, wallet, browser, mobile, desktop, ios, android"}}},layoutContext:{}}}});
